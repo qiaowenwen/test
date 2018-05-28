@@ -34,6 +34,7 @@ export default {
   }
   .right{
     width:100%;
+    margin-left:300px;
     height:100%;
     background:#f0f0f8;
   }
