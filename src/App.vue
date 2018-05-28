@@ -2,8 +2,8 @@
   <div id="app">
     <div class="left">
       <ul class="left-item-wrap">
-        <li class="left-item-list">112344</li>
-        <li class="left-item-list">112344</li>
+        <li class="left-item-list"><a @click="$goRoute('/password')">密码强度的检测</a></li>
+        <li class="left-item-list"><a @click="$goRoute('/Hello')">Hello</a></li>
         <li class="left-item-list">112344</li>
         <li class="left-item-list">112344</li>
       </ul>
@@ -21,16 +21,14 @@
 export default {
   name: 'App'
 }
-
 </script>
-
 <style>
 #app {
   height:100%;
   }
   .left{
-    background:#f0f0f0;
-    width:400px;
+    background:#e7e7ea8a;
+    width:300px;
     height:100%;
     float:left;
   }
@@ -40,10 +38,16 @@ export default {
     background:#f0f0f8;
   }
   .left-item-wrap{
-    padding:10px;
+    padding:20px;
   }
   .left-item-list{
+    height:40px;
+    line-height:40px;
+    padding-left:10px;
+    list-style:none;
     margin-bottom:10px;
     cursor:pointer;
+    background:#607d8b;
+    border-radius:4px;
   }
 </style>
